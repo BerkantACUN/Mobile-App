@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "295118432688",
+    "project_id": "the-deaf-world",
+    "storage_bucket": "the-deaf-world.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:295118432688:android:43d36c179ef47b5becce75",
+        "android_client_info": {
+          "package_name": "com.example.deafworld"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD4AGea8e9oU5UZB6rb2aw1Pbnq7iWSSzg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

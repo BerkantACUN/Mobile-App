@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <base href="$FLUTTER_BASE_HREF">
+
+  <meta charset="UTF-8">
+  <meta content="IE=Edge" http-equiv="X-UA-Compatible">
+  <meta name="description" content="A new Flutter project.">
+
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta name="apple-mobile-web-app-title" content="cy_app_">
+  <link rel="apple-touch-icon" href="icons/Icon-192.png">
+
+  <link rel="icon" type="image/png" href="favicon.png"/>
+
+  <title>cy_app_</title>
+  <link rel="manifest" href="manifest.json">
+
+  <link rel="stylesheet" href="loader.css">
+
+  <style>
+    #flutter-app {
+      display: none;
+    }
+
+    .loader-container.hide {
+      display: none;
+    }
+  </style>
+
+  <!-- Firebase SDK -->
+  <script src="https://www.gstatic.com/firebasejs/10.1.0/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/10.1.0/firebase-auth.js"></script>
+  <script>
+    // Firebase konfigürasyonu
+    const firebaseConfig = {
+      apiKey: "AIzaSyDgWktiuoVQSRvNyvpaW3cp4mLaqG4v3r4",
+      authDomain: "the-deaf-world.firebaseapp.com",
+      projectId: "the-deaf-world",
+      storageBucket: "the-deaf-world.appspot.com",
+      messagingSenderId: "295118432688",
+      appId: "1:295118432688:web:c94fe6f7db09cc9fecce75",
+      measurementId: "G-WTL09QV1CG"
+    };
+
+    // Firebase'i başlat
+    firebase.initializeApp(firebaseConfig);
+  </script>
+</head>
+<body>
+  <!-- Yükleme Animasyonu -->
+  <div class="loader-container">
+    <div id="container">
+      <div class="divider"></div>
+      <p class="loading-text">
+        <span class="letter">L</span>
+        <span class="letter">O</span>
+        <span class="letter">A</span>
+        <span class="letter">D</span>
+        <span class="letter">I</span>
+        <span class="letter">N</span>
+        <span class="letter">G</span>
+      </p>
+    </div>
+  </div>
+
+  <!-- Flutter Uygulaması -->
+  <div id="flutter-app">
+    <script src="flutter_bootstrap.js" async></script>
+  </div>
+
+  <script>
+    // Sayfa yüklendiğinde yükleme animasyonunu gizle ve Flutter uygulamasını göster
+    window.addEventListener('load', function () {
+      document.querySelector('.loader-container').classList.add('hide');
+      document.getElementById('flutter-app').style.display = 'block';
+    });
+  </script>
+</body>
+</html>

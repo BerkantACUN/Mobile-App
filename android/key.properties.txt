@@ -1,0 +1,4 @@
+storePassword=<Berkant03>
+keyPassword=<Berkant03>
+keyAlias=<Berkant03>
+storeFile=<C:\Users\acunb\my-release-key.jks>

@@ -17,7 +17,7 @@ class DefaultFirebaseOptions {
         return windows;
       case TargetPlatform.linux:
         throw UnsupportedError(
-          'DefaultFirebaseOptions have not been configured for linux - '
+          'DefaultFirebaseOptions have not been configured for Linux - '
           'you can reconfigure this by running the FlutterFire CLI again.',
         );
       default:
@@ -33,44 +33,43 @@ class DefaultFirebaseOptions {
     messagingSenderId: '295118432688',
     projectId: 'the-deaf-world',
     authDomain: 'the-deaf-world.firebaseapp.com',
-    storageBucket: 'the-deaf-world.firebasestorage.app',
-    measurementId: 'G-WTL09QV1CG',
+    storageBucket: 'the-deaf-world.appspot.com',
+    measurementId: 'WEB_MEASUREMENT_ID',
   );
 
   static const FirebaseOptions android = FirebaseOptions(
-    apiKey: 'AIzaSyD4AGea8e9oU5UZB6rb2aw1Pbnq7iWSSzg',
-    appId: '1:295118432688:android:5b5d39c1896e0a0fecce75',
-    messagingSenderId: '295118432688',
+    apiKey: 'ANDROID_API_KEY',
+    appId: 'ANDROID_APP_ID',
+    messagingSenderId: 'ANDROID_MESSAGING_SENDER_ID',
     projectId: 'the-deaf-world',
-    storageBucket: 'the-deaf-world.firebasestorage.app',
+    storageBucket: 'the-deaf-world.appspot.com',
   );
 
   static const FirebaseOptions ios = FirebaseOptions(
-    apiKey: 'AIzaSyDD5gKHEWmW3ce-pVei7gSTuvwD21mxWes',
-    appId: '1:295118432688:ios:5e0503b6db388a37ecce75',
-    messagingSenderId: '295118432688',
+    apiKey: 'IOS_API_KEY',
+    appId: 'IOS_APP_ID',
+    messagingSenderId: 'IOS_MESSAGING_SENDER_ID',
     projectId: 'the-deaf-world',
-    storageBucket: 'the-deaf-world.firebasestorage.app',
+    storageBucket: 'the-deaf-world.appspot.com',
     iosBundleId: 'com.example.cyApp',
   );
 
   static const FirebaseOptions macos = FirebaseOptions(
-    apiKey: 'AIzaSyDD5gKHEWmW3ce-pVei7gSTuvwD21mxWes',
-    appId: '1:295118432688:ios:5e0503b6db388a37ecce75',
-    messagingSenderId: '295118432688',
+    apiKey: 'IOS_API_KEY',
+    appId: 'IOS_APP_ID',
+    messagingSenderId: 'IOS_MESSAGING_SENDER_ID',
     projectId: 'the-deaf-world',
-    storageBucket: 'the-deaf-world.firebasestorage.app',
+    storageBucket: 'the-deaf-world.appspot.com',
     iosBundleId: 'com.example.cyApp',
   );
 
   static const FirebaseOptions windows = FirebaseOptions(
-    apiKey: 'AIzaSyDgWktiuoVQSRvNyvpaW3cp4mLaqG4v3r4',
-    appId: '1:295118432688:web:15623b35595ab3deecce75',
-    messagingSenderId: '295118432688',
+    apiKey: 'WEB_API_KEY',
+    appId: 'WEB_APP_ID',
+    messagingSenderId: 'WEB_MESSAGING_SENDER_ID',
     projectId: 'the-deaf-world',
     authDomain: 'the-deaf-world.firebaseapp.com',
-    storageBucket: 'the-deaf-world.firebasestorage.app',
-    measurementId: 'G-QX0NT1F09J',
+    storageBucket: 'the-deaf-world.appspot.com',
+    measurementId: 'WEB_MEASUREMENT_ID',
   );
-
 }
